@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	 <script language="JavaScript">
+
+//////////F12 disable code////////////////////////
+    document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+           //alert('No F-12');
+            return false;
+        }
+    }
+    document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+/////////////////////end///////////////////////
+
+
+//Disable right click script 
+//visit http://www.rainbow.arch.scriptmania.com/scripts/ 
+var message="Sorry, right-click has been disabled"; 
+/////////////////////////////////// 
+function clickIE() {if (document.all) {(message);return false;}} 
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) { 
+if (e.which==2||e.which==3) {(message);return false;}}} 
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
+document.oncontextmenu=new Function("return false") 
+// 
+function disableCtrlKeyCombination(e)
+{
+//list all CTRL + key combinations you want to disable
+var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j' , 'w','u');
+var key;
+var isCtrl;
+if(window.event)
+{
+key = window.event.keyCode;     //IE
+if(window.event.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+else
+{
+key = e.which;     //firefox
+if(e.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+//if ctrl is pressed check if other key is in forbidenKeys array
+if(isCtrl)
+{
+for(i=0; i<forbiddenKeys.length; i++)
+{
+//case-insensitive comparation
+if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+{
+alert('Key combination CTRL + '+String.fromCharCode(key) +' has been disabled.');
+return false;
+}
+}
+}
+return true;
+}
+</script>
+	
+	<title>FreeTimeShopping</title>
+		<script src = "js/angular.js"></script>
+		<script src = "js/app.js"></script>
+		<meta charset = "UTF-8" name = "viewport" content = "width=device-width, initial-scale=1" />
+		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css"/>
+		<link rel = "stylesheet" type = "text/css" href = "css/style1.css"/>
+		 <link rel="stylesheet" href="css/bootstrap.min.css"/>
+ 
+  <script src="jquery-1.11.2 (1).js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Made with WOW Slider - Create beautiful, responsive image sliders in a few clicks. Awesome skins and animations. Responsive slider" />
+	
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+		
+	</head>
+<body ng-app = "myModule" ng-controller = "myController" oncontextmenu="return false"onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+	<nav class = "navbar navbar-default">
+		<div class = "container-fluid">
+			<a class = "navbar-brand" href = "https://sourcecodester.com">Freetimeshooping</a>
+		</div>
+	</nav>
+	<div class = "col-md-2"></div>
+	<div class = "col-md-8 well">
+		<h3 class = "text-primary"> Shopping Cart </h3>
+		<hr style = "border-top:1px dotted #ccc;"/>
+		<div id = "bg-background" class = "col-md-7">
+			<h4>PRODUCTS</h4>
+			<hr style = "border-top:1px groovy #ccc;">
+			<div id = "product">
+				<div id = "p_list" ng-repeat = "product in products ">
+					<h5>{{product.p_name}}</h5>
+					<center><img ng-src = "{{product.p_image}}"class="img-responsive" data-toggle="modal" data-target="#myModal"/></center>
+					<div><label>Price: ₱{{product.p_price}}</label></div>
+					<table><tr>
+					<td><form action="placeorder.jsp"><input type="submit" value="BUYNOW" onclick="image('img/one.jpg');"/></form></td>
+					<td><center><button type = "button" ng-click = "add_cart(product)"><span class = "glyphicon glyphicon-shopping-cart"></span> Add to cart</button></center></td>
+					<script>
+		function image(img_url){
+			
+			console.log("Saving to localstorage...");
+			localStorage.setItem("img_url",img_url);
+			window.location.href="placeorder.jsp";
+	}
+	</script>
+					</tr>
+					</table>
+					
+				</div>
+			</div>
+		</div>
+		     <div class="modal fade" id="myModal" role="dialog">    
+                  <div class="modal-dialog">      
+                      <div class="modal-content">      
+                          <div class="modal-header">
+         
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div>
+							<br>	
+<p>The Samsung Galaxy S7 is a 5.1-inch phone, while the Galaxy S7 edge has had a jump to 5.5-inches, the latter also seems to feature the biggest differences in overall design on a year-to-year basis. Samsung has got rid of the sharper edge and flat back of the Galaxy S6 edge, replacing it with a curved rear that wraps around to meet the edges of the curved screen.
+The end result is a more rounded phone that feels smoother and more comfortable in the hand, from the rear, both the S7 and edge look similar, if different sizes – but the front face is naturally flat..</p>
+								
+								
+								
+								
+								</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+		<div class = "pull-right col-md-5">
+			<div class = "panel panel-primary">
+				<div class = "panel-heading">
+					<h5>MY CART</h5>
+				</div>
+				<div class = "panel-body table-responsive">
+					<table class = "table">
+						<thead>
+							<tr>
+								<th>Product</th>
+								<th>Price</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat = "cart in carts" ng-init = "setTotals(cart)">
+								<td>{{cart.p_name}}</td>
+								<td>₱{{cart.p_price}}</td>
+								<td><button type = "button" ng-click = "remove_cart(cart)" class = "btn btn-danger"><span class = "glyphicon glyphicon-remove"></span></button></td>
+							</tr>
+							<tr>
+								<td align = "right">Total</td>
+								<td>₱{{total}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>	
+</html>

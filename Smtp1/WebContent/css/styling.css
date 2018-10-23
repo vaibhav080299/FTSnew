@@ -1,0 +1,194 @@
+/*logo and nav bar starts*/
+.header
+{
+	background-color: rgb(242,242,242);
+}
+/*logo*/
+.logo
+{
+	margin-left: 20px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+/*navigation bar starts*/
+.navbar
+{
+	margin-top: 10px;
+}
+.navbar ul li 
+{
+	
+	display: inline-block;
+	 
+	
+}
+.navbar ul li a
+{
+	text-decoration: none;
+	color:rgb(130,144,170);
+	border-radius: 5px;
+	transition-property:background-color color;
+	transition-duration:1s;
+
+}
+.navbar ul li a:hover
+{
+	background-color: rgb(233,177,10);
+	color:white;
+}
+.active
+{
+	background-color: rgb(233,177,10);
+	
+	border-radius: 5px;
+}
+.nav .active  a
+{
+	color: white;
+}
+/*navigation ends*/
+/*slider*/
+.slider
+{
+	box-shadow:10px 10px 5px black;
+}
+/*slider ends*/
+.text
+{
+	background-color: rgb(233,177,10);
+
+}
+.text h2
+{
+	color: white;
+	text-transform: uppercase;
+}
+.text h2 span
+{
+	color:rgb(23,23,23);
+	font-weight: bold;
+}
+/*consult parts*/
+.cons h2
+{
+	font-family: 'Lato', sans-serif;
+}
+.texti h3
+{
+	
+	
+	
+	font-size: 22px;
+	line-height: 1.5em;
+	
+
+}
+.texti h4
+{
+padding-left: 20px;
+}
+.texti h5
+{
+font-size: 18px;
+	line-height: 1.5em;
+	
+	color: rgb(158,145,145);
+	padding-left: 40px;
+	text-align: justify;
+	}
+
+.texti p
+{
+	line-height: 1.6em;
+    color: #595959;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1.5em;
+}
+a
+{
+	text-decoration: none;
+}
+
+.texti a h3:hover
+{
+	background-color: rgb(233,177,10);
+	color:white;
+}
+.texti a h3
+{
+	text-decoration: none;
+	color:#595959;
+	transition-property:background-color color;
+	transition-duration:1s;
+}
+/*footer*/
+.all h3
+{
+	color:#ebb30a;
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 13px;
+}
+
+.all ul li
+{
+
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+}
+.works
+{
+	text-align: center;
+}
+.works h3
+{
+	color: #595959;
+    font-size: 1.8em;
+    margin: 0;
+    font-weight: 400;
+}
+.news
+{
+	background: #f1f1f1;
+    padding: 1.5em 17px;
+    position: relative;
+}
+.news h4
+{
+	font-size: 1.35em;
+    color: #595959;
+    font-weight: 700;
+    margin: 0px;
+}
+.about-text h5
+{
+	font-family:'Lato', sans-serif;
+color:black;
+font-size: 23px;
+margin-top: 5%;
+}
+.about-text p
+{
+color:rgb(158,145,145) ;
+font-family: 'Lato', sans-serif;
+font-size: 15px;
+}
+.testim
+{
+	border: 1px solid gray;
+}
+.testim span
+{
+	font-family: sans-serif;
+	font-size: 17px;
+	text-align: justify;
+	font-style: italic;
+}
+.proc p
+{
+	color: #595959;
+    font-size: 1.2em;
+    margin: 0;    
+}
